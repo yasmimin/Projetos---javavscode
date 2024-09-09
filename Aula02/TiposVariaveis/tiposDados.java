@@ -1,6 +1,6 @@
 package Aula02.TiposVariaveis;
 
-public class tiposDados {
+public class TiposDados {
 
     //EXEMPLOS DA AULA 2 DE VARIÁVEIS
 
