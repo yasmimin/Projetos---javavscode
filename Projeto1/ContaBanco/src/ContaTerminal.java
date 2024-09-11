@@ -12,6 +12,11 @@ public class ContaTerminal {
         //Importar Scanner para entrada de usuário
         Scanner scanner = new Scanner (System.in);
 
+         //Println para digitar o nome do cliente
+         System.out.println("Digite seu nome: ");
+         scanner.nextLine();
+         String Cliente = scanner.nextLine();
+
         //Solicitação de dados do usuário
         System.out.println("Digite o nome da agência: ");
        String agencia = scanner.next();
@@ -24,15 +29,11 @@ public class ContaTerminal {
         System.out.println("Digite o número da seu saldo: ");
         double saldo = scanner.nextDouble();
 
-        //Println para digitar o nome do cliente
-        System.out.println("Digite seu nome: ");
-        scanner.nextLine();
-        String nomeCliente = scanner.nextLine();
         //Fim da solicitação de dados ao usuário
 
         
         //String para retornar mensagem para o usuário
-        String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque. ";
+        String mensagem = "Olá " + Cliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque. ";
 
         //Print para exibir no console a mensagem para o usuário
         System.out.println(mensagem);
